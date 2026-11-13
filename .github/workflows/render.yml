@@ -1,0 +1,44 @@
+name: Render Honda Beat CBS
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Remotion browser
+        run: npx remotion browser ensure
+
+      - name: Render MP4
+        run: |
+          mkdir -p out
+          npm run render
+
+      - name: Upload MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: Honda-Beat-CBS-MP4
+          path: out/beat-cbs.mp4
+          if-no-files-found: error
+          retention-days: 7
