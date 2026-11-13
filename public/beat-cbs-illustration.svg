@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620">
+<defs>
+ <linearGradient id="red" x1="0" x2="1"><stop stop-color="#a90d18"/><stop offset=".55" stop-color="#ed2934"/><stop offset="1" stop-color="#7d0911"/></linearGradient>
+ <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#b8bdc4"/></linearGradient>
+</defs>
+<ellipse cx="505" cy="535" rx="420" ry="35" fill="#000" opacity=".12"/>
+<g stroke="#202329" stroke-width="20" fill="none">
+ <circle cx="250" cy="440" r="115"/><circle cx="250" cy="440" r="70"/>
+ <circle cx="760" cy="440" r="115"/><circle cx="760" cy="440" r="70"/>
+</g>
+<g stroke="#777" stroke-width="9" fill="none" opacity=".9">
+ <path d="M250 325V555M135 440H365M760 325V555M645 440H875"/>
+ <path d="M250 440L760 440M250 440L510 330L760 440"/>
+</g>
+<path d="M330 420 Q380 290 510 280 L665 300 Q730 315 760 405 L665 420 L575 370 L460 400Z" fill="url(#red)" stroke="#25282d" stroke-width="13"/>
+<path d="M410 285 Q470 210 615 230 L690 280 L590 315 L480 315Z" fill="#25282d"/>
+<path d="M460 225 Q500 180 610 195 L650 235 L530 250Z" fill="#17191d"/>
+<path d="M485 195 Q550 155 630 190" fill="none" stroke="#e9e9e9" stroke-width="14" stroke-linecap="round"/>
+<path d="M680 300 L740 260 L800 285 L780 315 L730 325Z" fill="url(#silver)" stroke="#25282d" stroke-width="10"/>
+<path d="M785 275 L850 245 L885 255 L865 280 L810 300Z" fill="#25282d"/>
+<path d="M805 250 L860 215" stroke="#333" stroke-width="12" stroke-linecap="round"/>
+<path d="M330 420 L430 430 L480 490 L390 495Z" fill="#25282d"/>
+<path d="M475 385 L550 395 L580 450 L520 465Z" fill="url(#silver)" stroke="#25282d" stroke-width="10"/>
+<path d="M350 340 L405 305 L465 315 L440 360Z" fill="#f6f6f6" stroke="#25282d" stroke-width="9"/>
+<path d="M355 345 L420 330" stroke="#e31b2b" stroke-width="12"/>
+<path d="M710 390 Q750 365 790 390" stroke="#e31b2b" stroke-width="16" fill="none"/>
+<path d="M600 310 L665 320" stroke="#fff" stroke-width="9" opacity=".85"/>
+<text x="505" y="355" font-family="Arial" font-size="28" font-weight="bold" fill="#fff">BEAT</text>
+<path d="M205 540 L290 540 M715 540 L800 540" stroke="#333" stroke-width="15" stroke-linecap="round"/>
+</svg>
